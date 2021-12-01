@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+        
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+        
+        <table>
+            <tr>
+                <td><label>Your Full Name:</label></td>
+                  <td><input type="text" name="name" id="name1" size="30" /></td>
+            </tr>
+            <tr>
+                <td><label>User ID:</label></td>
+                <td><input type ="text"  size="30">
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" name="text_gender" id="gender1" value="M" />Male
+                <input type="radio" name="text_gender" id="gender2" value="F" checked/>Female</td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="date" name="age" id="age1" size="30"/></td>
+            </tr>
+           
+      <tr>
+          <td><label>Status:</label> </td>
+          <td>
+              <select multiple size="1">
+                   <option disabled selected >....select status.....</option> 
+              <option value="student">Student</option>
+              <option value="worker">Worker</option>
+              <option value="homemaker" selected>homemaker</option>
+              </select> 
+          </td>
+      </tr>
+    
+
+       <tr>
+        <td><label>Hobbies:</label></td>
+        <td><label>Watching movies</label> <input type="checkbox"  name="hby_watch" value="watching" checked/>
+            <label>Reading</label> <input type="checkbox" name="hby_read"  value="reading" />
+            <label>playing</label><input type="checkbox" name="play" value="playing" checked />
+            <label>Travelling</label><input type="checkbox" name="travelling" value="travelling" />
+            <label>Gardening</label><input type="checkbox" name="Gardening" value="Gardening "/>
+        </td>
+ 
+    </tr>
+     
+    <tr>
+        <td> <label>Adress:</label></td>
+        <td><textarea name="adress" id="adress1" cols="30" rows="5" ></textarea></td>
+     </tr>
+
+    <tr> 
+        <td><label>country</label></td>
+     <td> <input list="dt_country" size="30" />
+      <datalist id="dt_country">
+          <option >India</option>
+  <option >usa</option>
+  <option >Dubai</option>
+  <option>Qatar</option>
+  <option>Iraq</option>
+  </datalist>
+  </td>
+  </tr>
+
+  <tr>
+    <td><label>upload id proof:</label></td>
+<td><input type="file" id="file1" name="file"  /></td>
+</tr>
+  <div style="float: right"  >
+    <video src="{% static 'videos/reading video.mp4' %}" height="200px" width="200px" controls  loop muted></video> <br />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ENR7DVDCOAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<tr>
+    <td align="center">
+    <img src="{% static 'videos/submit.jfif' %}" width="100"></td>
+</tr>
+</body>
+</html>
